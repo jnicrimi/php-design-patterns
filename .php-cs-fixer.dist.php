@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()
-    ->in('src')
+    ->in([
+        'src',
+        'tests',
+    ])
     ->name('*.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);

@@ -1,3 +1,7 @@
+.PHONY: phpunit
+phpunit:
+	vendor/bin/phpunit tests --testdox
+
 .PHONY: phpstan
 phpstan:
 	vendor/bin/phpstan analyse --configuration phpstan.neon --memory-limit=-1
