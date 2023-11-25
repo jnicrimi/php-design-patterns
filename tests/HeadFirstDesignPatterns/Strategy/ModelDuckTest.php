@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\HeadFirstDesignPatterns\Strategy;
 
+use HeadFirstDesignPatterns\Strategy\FlyRocketPowered;
 use HeadFirstDesignPatterns\Strategy\ModelDuck;
 use PHPUnit\Framework\TestCase;
 
@@ -18,6 +19,8 @@ class ModelDuckTest extends TestCase
     {
         $duck = new ModelDuck();
         $this->assertSame('I can\'t fly', $duck->fly());
+        $duck->setFlyBehavior(new FlyRocketPowered());
+        $this->assertSame('I\'m flying with a rocket', $duck->fly());
     }
 
     /**
