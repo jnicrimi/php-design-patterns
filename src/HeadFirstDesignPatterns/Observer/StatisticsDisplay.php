@@ -65,6 +65,11 @@ class StatisticsDisplay implements DisplayElementInterface, ObserverInterface
      */
     public function display(): void
     {
+        if ($this->numReadings === 0) {
+            echo "No readings available\n";
+
+            return;
+        }
         echo sprintf(
             'Avg/Max/Min temperature = %.1f/%.1f/%.1f',
             $this->tempSum / $this->numReadings,
