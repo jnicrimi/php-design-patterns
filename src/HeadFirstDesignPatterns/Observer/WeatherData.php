@@ -37,7 +37,9 @@ class WeatherData implements SubjectInterface
      */
     public function registerObserver(ObserverInterface $observer): void
     {
-        $this->observers[] = $observer;
+        if (! in_array($observer, $this->observers, true)) {
+            $this->observers[] = $observer;
+        }
     }
 
     /**
