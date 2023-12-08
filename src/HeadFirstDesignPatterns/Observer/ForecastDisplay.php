@@ -49,16 +49,14 @@ class ForecastDisplay implements DisplayElementInterface, ObserverInterface
      */
     public function display(): void
     {
-        echo 'Forecast: ';
+        $forecast = 'Forecast: ';
         if ($this->currentPressure > $this->lastPressure) {
-            echo 'Improving weather on the way!';
-            echo "\n";
+            $forecast .= 'Improving weather on the way!';
         } elseif ($this->currentPressure === $this->lastPressure) {
-            echo 'More of the same';
-            echo "\n";
+            $forecast .= 'More of the same';
         } elseif ($this->currentPressure < $this->lastPressure) {
-            echo 'Watch out for cooler, rainy weather';
-            echo "\n";
+            $forecast .= 'Watch out for cooler, rainy weather';
         }
+        echo $forecast."\n";
     }
 }
