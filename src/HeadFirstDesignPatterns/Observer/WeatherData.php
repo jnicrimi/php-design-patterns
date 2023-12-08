@@ -52,6 +52,7 @@ class WeatherData implements SubjectInterface
         $key = array_search($observer, $this->observers, true);
         if ($key !== false) {
             unset($this->observers[$key]);
+            $this->observers = array_values($this->observers);
         }
     }
 
