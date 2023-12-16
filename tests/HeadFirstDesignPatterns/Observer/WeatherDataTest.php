@@ -8,8 +8,9 @@ use HeadFirstDesignPatterns\Observer\CurrentConditionsDisplay;
 use HeadFirstDesignPatterns\Observer\ForecastDisplay;
 use HeadFirstDesignPatterns\Observer\StatisticsDisplay;
 use HeadFirstDesignPatterns\Observer\WeatherData;
+use PHPUnit\Framework\TestCase;
 
-class WeatherDataTest extends \PHPUnit\Framework\TestCase
+class WeatherDataTest extends TestCase
 {
     /**
      * @return void
