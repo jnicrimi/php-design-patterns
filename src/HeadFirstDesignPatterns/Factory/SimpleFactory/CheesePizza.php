@@ -11,7 +11,7 @@ class CheesePizza extends AbstractPizza
         $this->name = 'Cheese Pizza';
         $this->dough = 'Regular Crust';
         $this->sauce = 'Marinara Pizza Sauce';
-        array_push($this->toppings, 'Fresh Mozzarella');
-        array_push($this->toppings, 'Parmesan');
+        $this->toppings[] = 'Fresh Mozzarella';
+        $this->toppings[] = 'Parmesan';
     }
 }

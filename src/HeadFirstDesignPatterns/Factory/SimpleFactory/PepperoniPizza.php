@@ -11,8 +11,8 @@ class PepperoniPizza extends AbstractPizza
         $this->name = 'Pepperoni Pizza';
         $this->dough = 'Crust';
         $this->sauce = 'Marinara sauce';
-        array_push($this->toppings, 'Sliced Pepperoni');
-        array_push($this->toppings, 'Sliced Onion');
-        array_push($this->toppings, 'Grated parmesan cheese');
+        $this->toppings[] = 'Sliced Pepperoni';
+        $this->toppings[] = 'Sliced Onion';
+        $this->toppings[] = 'Grated parmesan cheese';
     }
 }

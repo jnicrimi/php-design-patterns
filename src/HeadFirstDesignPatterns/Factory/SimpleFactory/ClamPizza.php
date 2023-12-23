@@ -11,7 +11,7 @@ class ClamPizza extends AbstractPizza
         $this->name = 'Clam Pizza';
         $this->dough = 'Thin crust';
         $this->sauce = 'White garlic sauce';
-        array_push($this->toppings, 'Clams');
-        array_push($this->toppings, 'Grated parmesan cheese');
+        $this->toppings[] = 'Clams';
+        $this->toppings[] = 'Grated parmesan cheese';
     }
 }
