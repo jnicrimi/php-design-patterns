@@ -11,8 +11,6 @@ use PHPUnit\Framework\TestCase;
 class ModelDuckTest extends TestCase
 {
     /**
-     * @testdox ModelDuck fly
-     *
      * @return void
      */
     public function testFly()
@@ -24,8 +22,6 @@ class ModelDuckTest extends TestCase
     }
 
     /**
-     * @testdox ModelDuck quack
-     *
      * @return void
      */
     public function testQuack()
@@ -35,8 +31,6 @@ class ModelDuckTest extends TestCase
     }
 
     /**
-     * @testdox ModelDuck display
-     *
      * @return void
      */
     public function testDisplay()

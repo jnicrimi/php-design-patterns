@@ -10,8 +10,6 @@ use PHPUnit\Framework\TestCase;
 class MallardDuckTest extends TestCase
 {
     /**
-     * @testdox MallardDuck fly
-     *
      * @return void
      */
     public function testFly()
@@ -21,8 +19,6 @@ class MallardDuckTest extends TestCase
     }
 
     /**
-     * @testdox MallardDuck quack
-     *
      * @return void
      */
     public function testQuack()
@@ -32,8 +28,6 @@ class MallardDuckTest extends TestCase
     }
 
     /**
-     * @testdox MallardDuck display
-     *
      * @return void
      */
     public function testDisplay()
