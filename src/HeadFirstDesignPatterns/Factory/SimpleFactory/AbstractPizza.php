@@ -68,6 +68,9 @@ abstract class AbstractPizza implements Stringable
         echo 'Boxing '.$this->name.PHP_EOL;
     }
 
+    /**
+     * @return string
+     */
     public function __toString(): string
     {
         $display = '';

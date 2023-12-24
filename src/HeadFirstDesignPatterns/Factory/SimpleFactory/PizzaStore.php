@@ -27,11 +27,9 @@ class PizzaStore
     public function orderPizza(string $type): ?AbstractPizza
     {
         $pizza = $this->factory->createPizza($type);
-
         if ($pizza === null) {
             return null;
         }
-
         $pizza->prepare();
         $pizza->bake();
         $pizza->cut();
