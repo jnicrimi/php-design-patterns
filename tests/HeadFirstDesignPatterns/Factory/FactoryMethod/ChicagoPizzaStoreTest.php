@@ -14,6 +14,9 @@ class ChicagoPizzaStoreTest extends TestCase
      */
     private $store;
 
+    /**
+     * @return void
+     */
     public function setUp(): void
     {
         parent::setUp();
