@@ -7,15 +7,9 @@ namespace HeadFirstDesignPatterns\Decorator;
 abstract class AbstractCondimentDecorator extends AbstractBeverage
 {
     /**
-     * @var AbstractBeverage
-     */
-    protected $beverage;
-
-    /**
      * @param AbstractBeverage $beverage
      */
-    public function __construct(AbstractBeverage $beverage)
+    public function __construct(protected AbstractBeverage $beverage)
     {
-        $this->beverage = $beverage;
     }
 }

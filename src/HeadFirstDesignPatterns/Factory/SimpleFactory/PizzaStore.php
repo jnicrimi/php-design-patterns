@@ -7,16 +7,10 @@ namespace HeadFirstDesignPatterns\Factory\SimpleFactory;
 class PizzaStore
 {
     /**
-     * @var SimplePizzaFactory
-     */
-    private $factory;
-
-    /**
      * @param SimplePizzaFactory $factory
      */
-    public function __construct(SimplePizzaFactory $factory)
+    public function __construct(private SimplePizzaFactory $factory)
     {
-        $this->factory = $factory;
     }
 
     /**

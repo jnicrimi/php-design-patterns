@@ -17,16 +17,10 @@ class CurrentConditionsDisplay implements DisplayElementInterface, ObserverInter
     private float $humidity;
 
     /**
-     * @var WeatherData
-     */
-    private WeatherData $weatherData;
-
-    /**
      * @param WeatherData $weatherData
      */
-    public function __construct(WeatherData $weatherData)
+    public function __construct(private WeatherData $weatherData)
     {
-        $this->weatherData = $weatherData;
         $this->weatherData->registerObserver($this);
     }
 

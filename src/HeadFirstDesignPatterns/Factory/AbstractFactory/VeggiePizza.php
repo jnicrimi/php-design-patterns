@@ -7,16 +7,10 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 class VeggiePizza extends AbstractPizza
 {
     /**
-     * @var PizzaIngredientFactoryInterface
-     */
-    protected $ingredientFactory;
-
-    /**
      * @param PizzaIngredientFactoryInterface $ingredientFactory
      */
-    public function __construct(PizzaIngredientFactoryInterface $ingredientFactory)
+    public function __construct(protected PizzaIngredientFactoryInterface $ingredientFactory)
     {
-        $this->ingredientFactory = $ingredientFactory;
     }
 
     /**
