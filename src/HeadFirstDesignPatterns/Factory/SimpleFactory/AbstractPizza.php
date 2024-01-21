@@ -11,22 +11,22 @@ abstract class AbstractPizza implements Stringable
     /**
      * @var string
      */
-    protected $name;
+    protected string $name;
 
     /**
      * @var string
      */
-    protected $dough;
+    protected string $dough;
 
     /**
      * @var string
      */
-    protected $sauce;
+    protected string $sauce;
 
     /**
      * @var array
      */
-    protected $toppings = [];
+    protected array $toppings = [];
 
     /**
      * @return string

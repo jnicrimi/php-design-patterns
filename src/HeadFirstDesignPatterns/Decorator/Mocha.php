@@ -14,7 +14,7 @@ class Mocha extends AbstractCondimentDecorator
     /**
      * @var string
      */
-    protected $description = 'Mocha';
+    protected string $description = 'Mocha';
 
     /**
      * @return string

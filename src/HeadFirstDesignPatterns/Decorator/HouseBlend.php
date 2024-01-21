@@ -14,7 +14,7 @@ class HouseBlend extends AbstractBeverage
     /**
      * @var string
      */
-    protected $description = 'House Blend Coffee';
+    protected string $description = 'House Blend Coffee';
 
     /**
      * @return float

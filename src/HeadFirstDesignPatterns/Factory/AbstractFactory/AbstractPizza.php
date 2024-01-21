@@ -11,37 +11,37 @@ abstract class AbstractPizza
     /**
      * @var string
      */
-    protected $name;
+    protected string $name;
 
     /**
      * @var DoughInterface
      */
-    protected $dough;
+    protected DoughInterface $dough;
 
     /**
      * @var SauceInterface
      */
-    protected $sauce;
+    protected SauceInterface $sauce;
 
     /**
      * @var ArrayObject<VeggiesInterface>
      */
-    protected $veggies;
+    protected ArrayObject $veggies;
 
     /**
      * @var CheeseInterface
      */
-    protected $cheese;
+    protected CheeseInterface $cheese;
 
     /**
      * @var PepperoniInterface
      */
-    protected $pepperoni;
+    protected PepperoniInterface $pepperoni;
 
     /**
      * @var ClamsInterface
      */
-    protected $clam;
+    protected ClamsInterface $clam;
 
     /**
      * @return void

@@ -14,7 +14,7 @@ class Whip extends AbstractCondimentDecorator
     /**
      * @var string
      */
-    protected $description = 'Whip';
+    protected string $description = 'Whip';
 
     /**
      * @return string
