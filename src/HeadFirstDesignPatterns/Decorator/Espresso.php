@@ -14,7 +14,7 @@ class Espresso extends AbstractBeverage
     /**
      * @var string
      */
-    protected $description = 'Espresso';
+    protected string $description = 'Espresso';
 
     /**
      * @return float

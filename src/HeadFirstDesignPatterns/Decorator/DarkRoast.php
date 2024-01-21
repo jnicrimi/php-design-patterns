@@ -14,7 +14,7 @@ class DarkRoast extends AbstractBeverage
     /**
      * @var string
      */
-    protected $description = 'Dark Roast Coffee';
+    protected string $description = 'Dark Roast Coffee';
 
     /**
      * @return float

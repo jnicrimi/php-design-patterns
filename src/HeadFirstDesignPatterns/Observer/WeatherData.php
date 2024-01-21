@@ -24,7 +24,7 @@ class WeatherData implements SubjectInterface
     /**
      * @var array
      */
-    private $observers = [];
+    private array $observers = [];
 
     public function __construct()
     {

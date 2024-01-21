@@ -14,7 +14,7 @@ class Soy extends AbstractCondimentDecorator
     /**
      * @var string
      */
-    protected $description = 'Soy';
+    protected string $description = 'Soy';
 
     /**
      * @return string
