@@ -17,14 +17,6 @@ class Whip extends AbstractCondimentDecorator
     protected $description = 'Whip';
 
     /**
-     * @param AbstractBeverage $beverage
-     */
-    public function __construct(AbstractBeverage $beverage)
-    {
-        $this->beverage = $beverage;
-    }
-
-    /**
      * @return string
      */
     public function getDescription(): string
