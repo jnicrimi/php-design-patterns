@@ -14,7 +14,7 @@ class DarkRoastTest extends TestCase
     /**
      * @var DarkRoast
      */
-    private $beverage;
+    private DarkRoast $beverage;
 
     /**
      * @return void

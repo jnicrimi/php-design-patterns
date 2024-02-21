@@ -12,7 +12,7 @@ class EspressoTest extends TestCase
     /**
      * @var Espresso
      */
-    private $beverage;
+    private Espresso $beverage;
 
     /**
      * @return void

@@ -12,7 +12,7 @@ class ChicagoPizzaStoreTest extends TestCase
     /**
      * @var ChicagoPizzaStore
      */
-    private $store;
+    private ChicagoPizzaStore $store;
 
     /**
      * @return void
