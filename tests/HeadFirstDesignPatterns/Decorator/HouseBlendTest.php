@@ -15,7 +15,7 @@ class HouseBlendTest extends TestCase
     /**
      * @var HouseBlend
      */
-    private $beverage;
+    private HouseBlend $beverage;
 
     /**
      * @return void
