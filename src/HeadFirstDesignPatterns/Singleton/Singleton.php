@@ -7,9 +7,9 @@ namespace HeadFirstDesignPatterns\Singleton;
 class Singleton
 {
     /**
-     * @var Singleton
+     * @var Singleton|null
      */
-    private static Singleton $instance;
+    private static ?Singleton $instance = null;
 
     /**
      * @var string
@@ -26,7 +26,7 @@ class Singleton
      */
     public static function getInstance(): self
     {
-        if (! isset(self::$instance)) {
+        if (self::$instance === null) {
             self::$instance = new self();
         }
 
