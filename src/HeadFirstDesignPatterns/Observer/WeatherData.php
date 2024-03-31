@@ -26,10 +26,6 @@ class WeatherData implements SubjectInterface
      */
     private array $observers = [];
 
-    public function __construct()
-    {
-    }
-
     /**
      * @param ObserverInterface $observer
      *
