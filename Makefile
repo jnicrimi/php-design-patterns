@@ -4,7 +4,7 @@ phpunit:
 
 .PHONY: phpstan
 phpstan:
-	vendor/bin/phpstan analyse --configuration phpstan.neon
+	vendor/bin/phpstan analyse
 
 .PHONY: cs
 cs:
