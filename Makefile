@@ -4,7 +4,7 @@ phpunit:
 
 .PHONY: phpstan
 phpstan:
-	vendor/bin/phpstan analyse --configuration phpstan.neon --memory-limit=-1
+	vendor/bin/phpstan analyse --configuration phpstan.neon
 
 .PHONY: cs
 cs:
