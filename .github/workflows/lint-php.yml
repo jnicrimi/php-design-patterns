@@ -38,7 +38,7 @@ jobs:
       - name: Composer dump autoload
         run: composer dump-autoload
       - name: PHPStan
-        run: vendor/bin/phpstan analyse --configuration phpstan.neon
+        run: vendor/bin/phpstan analyse
       - name: Set output
         id: set-output
         if: ${{ always() }}
