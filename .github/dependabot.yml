@@ -14,7 +14,9 @@ updates:
     reviewers:
       - 'jnicrimi'
   - package-ecosystem: 'composer'
-    directory: '/'
+    directories:
+      - '/'
+      - '/tools/php-cs-fixer'
     schedule:
       interval: 'weekly'
       day: 'saturday'
