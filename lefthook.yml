@@ -21,7 +21,7 @@ pre-commit:
       run: vendor/bin/phpstan analyse {staged_files}
     php-cs-fixer:
       glob: "*.php"
-      run: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run --diff {staged_files}
+      run: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --path-mode=intersection --dry-run --diff {staged_files}
 
 pre-push:
   commands:
