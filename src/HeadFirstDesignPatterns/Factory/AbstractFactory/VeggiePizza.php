@@ -6,16 +6,10 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 class VeggiePizza extends AbstractPizza
 {
-    /**
-     * @param PizzaIngredientFactoryInterface $ingredientFactory
-     */
     public function __construct(protected PizzaIngredientFactoryInterface $ingredientFactory)
     {
     }
 
-    /**
-     * @return void
-     */
     public function prepare(): void
     {
         echo 'Preparing '.$this->name.PHP_EOL;

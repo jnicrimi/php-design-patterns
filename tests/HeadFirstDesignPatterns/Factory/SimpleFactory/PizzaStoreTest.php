@@ -13,9 +13,6 @@ class PizzaStoreTest extends TestCase
     /**
      * @dataProvider provideOrderPizza
      *
-     * @param string $type
-     * @param string $outputString
-     *
      * @return void
      */
     public function testOrderPizza(string $type, string $outputString)
@@ -29,9 +26,6 @@ class PizzaStoreTest extends TestCase
         $this->expectOutputString($outputString);
     }
 
-    /**
-     * @return array
-     */
     public static function provideOrderPizza(): array
     {
         $cheeseOutputString = <<<'EOF'

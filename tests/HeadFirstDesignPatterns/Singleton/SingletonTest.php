@@ -9,9 +9,6 @@ use PHPUnit\Framework\TestCase;
 
 class SingletonTest extends TestCase
 {
-    /**
-     * @return void
-     */
     public function testUniqueInstance(): void
     {
         $instance1 = Singleton::getInstance();
@@ -20,9 +17,6 @@ class SingletonTest extends TestCase
         $this->assertSame($instance1, $instance2);
     }
 
-    /**
-     * @return void
-     */
     public function testId(): void
     {
         $instance1 = Singleton::getInstance();

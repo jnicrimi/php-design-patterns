@@ -18,9 +18,6 @@ class ChicagoStylePepperoniPizza extends AbstractPizza
         $this->toppings[] = 'Sliced Pepperoni';
     }
 
-    /**
-     * @return void
-     */
     public function cut(): void
     {
         echo 'Cutting the pizza into square slices';

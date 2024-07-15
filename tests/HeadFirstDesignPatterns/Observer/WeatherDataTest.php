@@ -12,9 +12,6 @@ use PHPUnit\Framework\TestCase;
 
 class WeatherDataTest extends TestCase
 {
-    /**
-     * @return void
-     */
     public function testSetMeasurements(): void
     {
         $weatherData = new WeatherData();

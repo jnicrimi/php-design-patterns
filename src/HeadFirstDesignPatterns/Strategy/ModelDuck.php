@@ -12,9 +12,6 @@ class ModelDuck extends AbstractDuck
         $this->quackBehavior = new MuteQuack();
     }
 
-    /**
-     * @return string
-     */
     public function display(): string
     {
         return 'I\'m a model duck';

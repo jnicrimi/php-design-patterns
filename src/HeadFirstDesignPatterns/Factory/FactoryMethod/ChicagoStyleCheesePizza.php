@@ -14,9 +14,6 @@ class ChicagoStyleCheesePizza extends AbstractPizza
         $this->toppings[] = 'Shredded Mozzarella Cheese';
     }
 
-    /**
-     * @return void
-     */
     public function cut(): void
     {
         echo 'Cutting the pizza into square slices';

@@ -6,8 +6,5 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 interface ClamsInterface
 {
-    /**
-     * @return string
-     */
     public function __toString(): string;
 }

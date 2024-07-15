@@ -12,9 +12,6 @@ class MallardDuck extends AbstractDuck
         $this->quackBehavior = new Quack();
     }
 
-    /**
-     * @return string
-     */
     public function display(): string
     {
         return 'I\'m a real Mallard duck';

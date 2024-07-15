@@ -8,19 +8,10 @@ use ArrayObject;
 
 abstract class AbstractPizza
 {
-    /**
-     * @var string
-     */
     protected string $name;
 
-    /**
-     * @var DoughInterface
-     */
     protected DoughInterface $dough;
 
-    /**
-     * @var SauceInterface
-     */
     protected SauceInterface $sauce;
 
     /**
@@ -28,71 +19,39 @@ abstract class AbstractPizza
      */
     protected ArrayObject $veggies;
 
-    /**
-     * @var CheeseInterface
-     */
     protected CheeseInterface $cheese;
 
-    /**
-     * @var PepperoniInterface
-     */
     protected PepperoniInterface $pepperoni;
 
-    /**
-     * @var ClamsInterface
-     */
     protected ClamsInterface $clam;
 
-    /**
-     * @return void
-     */
     abstract public function prepare(): void;
 
-    /**
-     * @return void
-     */
     public function bake(): void
     {
         echo 'Bake for 25 minutes at 350'.PHP_EOL;
     }
 
-    /**
-     * @return void
-     */
     public function cut(): void
     {
         echo 'Cutting the pizza into diagonal slices'.PHP_EOL;
     }
 
-    /**
-     * @return void
-     */
     public function box(): void
     {
         echo 'Place pizza in official PizzaStore box'.PHP_EOL;
     }
 
-    /**
-     * @param string $name
-     *
-     * @return void
-     */
     public function setName(string $name): void
     {
         $this->name = $name;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         $result = '';

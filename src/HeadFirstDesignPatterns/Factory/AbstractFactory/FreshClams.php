@@ -6,9 +6,6 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 class FreshClams implements ClamsInterface
 {
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return 'Fresh Clams from Long Island Sound';

@@ -11,22 +11,13 @@ use PHPUnit\Framework\TestCase;
 
 class DarkRoastTest extends TestCase
 {
-    /**
-     * @var DarkRoast
-     */
     private DarkRoast $beverage;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->beverage = new DarkRoast();
     }
 
-    /**
-     * @return void
-     */
     public function testGetDescription(): void
     {
         $beverage = $this->beverage;
@@ -36,9 +27,6 @@ class DarkRoastTest extends TestCase
         $this->assertSame('Dark Roast Coffee, Mocha, Mocha, Whip', $beverage->getDescription());
     }
 
-    /**
-     * @return void
-     */
     public function testCost(): void
     {
         $beverage = $this->beverage;

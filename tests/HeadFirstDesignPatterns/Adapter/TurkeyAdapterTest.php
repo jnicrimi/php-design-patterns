@@ -11,9 +11,6 @@ use PHPUnit\Framework\TestCase;
 
 class TurkeyAdapterTest extends TestCase
 {
-    /**
-     * @return void
-     */
     public function testTurkeyToDuck(): void
     {
         $duck = new MallardDuck();
