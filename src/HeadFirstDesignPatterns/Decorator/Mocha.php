@@ -11,14 +11,8 @@ class Mocha extends AbstractCondimentDecorator
      */
     private const COST = 0.20;
 
-    /**
-     * @var string
-     */
     protected string $description = 'Mocha';
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return sprintf('%s, %s', $this->beverage->getDescription(), $this->description);

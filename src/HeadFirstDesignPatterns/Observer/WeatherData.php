@@ -6,31 +6,14 @@ namespace HeadFirstDesignPatterns\Observer;
 
 class WeatherData implements SubjectInterface
 {
-    /**
-     * @var float
-     */
     private float $temperature;
 
-    /**
-     * @var float
-     */
     private float $humidity;
 
-    /**
-     * @var float
-     */
     private float $pressure;
 
-    /**
-     * @var array
-     */
     private array $observers = [];
 
-    /**
-     * @param ObserverInterface $observer
-     *
-     * @return void
-     */
     public function registerObserver(ObserverInterface $observer): void
     {
         if (! in_array($observer, $this->observers, true)) {
@@ -38,11 +21,6 @@ class WeatherData implements SubjectInterface
         }
     }
 
-    /**
-     * @param ObserverInterface $observer
-     *
-     * @return void
-     */
     public function removeObserver(ObserverInterface $observer): void
     {
         $key = array_search($observer, $this->observers, true);
@@ -52,9 +30,6 @@ class WeatherData implements SubjectInterface
         }
     }
 
-    /**
-     * @return void
-     */
     public function notifyObservers(): void
     {
         foreach ($this->observers as $observer) {
@@ -62,21 +37,11 @@ class WeatherData implements SubjectInterface
         }
     }
 
-    /**
-     * @return void
-     */
     public function measurementsChanged(): void
     {
         $this->notifyObservers();
     }
 
-    /**
-     * @param float $temperature
-     * @param float $humidity
-     * @param float $pressure
-     *
-     * @return void
-     */
     public function setMeasurements(float $temperature, float $humidity, float $pressure): void
     {
         $this->temperature = $temperature;
@@ -85,25 +50,16 @@ class WeatherData implements SubjectInterface
         $this->measurementsChanged();
     }
 
-    /**
-     * @return float
-     */
     public function getTemperature(): float
     {
         return $this->temperature;
     }
 
-    /**
-     * @return float
-     */
     public function getHumidity(): float
     {
         return $this->humidity;
     }
 
-    /**
-     * @return float
-     */
     public function getPressure(): float
     {
         return $this->pressure;

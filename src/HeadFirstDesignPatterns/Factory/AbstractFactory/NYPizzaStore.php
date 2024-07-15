@@ -6,11 +6,6 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 class NYPizzaStore extends AbstractPizzaStore
 {
-    /**
-     * @param string $type
-     *
-     * @return AbstractPizza|null
-     */
     protected function createPizza(string $type): ?AbstractPizza
     {
         $pizza = null;

@@ -13,9 +13,6 @@ use PHPUnit\Framework\TestCase;
 
 class RemoteControlTest extends TestCase
 {
-    /**
-     * @return void
-     */
     public function testRemoteControl(): void
     {
         $remoteControl = new RemoteControl();

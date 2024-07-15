@@ -6,14 +6,8 @@ namespace HeadFirstDesignPatterns\Singleton;
 
 class Singleton
 {
-    /**
-     * @var Singleton|null
-     */
     private static ?Singleton $instance = null;
 
-    /**
-     * @var string
-     */
     private string $id;
 
     private function __construct()
@@ -21,9 +15,6 @@ class Singleton
         $this->id = uniqid();
     }
 
-    /**
-     * @return Singleton
-     */
     public static function getInstance(): self
     {
         if (self::$instance === null) {
@@ -33,9 +24,6 @@ class Singleton
         return self::$instance;
     }
 
-    /**
-     * @return string
-     */
     public function getId(): string
     {
         return $this->id;

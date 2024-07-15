@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// @phpstan-ignore-next-line
 $finder = PhpCsFixer\Finder::create()
     ->in([
         'src',
@@ -11,8 +12,10 @@ $finder = PhpCsFixer\Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
+// @phpstan-ignore-next-line
 $config = new PhpCsFixer\Config();
 
+// @phpstan-ignore-next-line
 return $config->setRiskyAllowed(true)
     ->setRules([
         '@PSR12' => true,
@@ -63,6 +66,7 @@ return $config->setRiskyAllowed(true)
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_around_offset' => true,
+        'no_superfluous_phpdoc_tags' => true,
         'no_trailing_comma_in_list_call' => true,
         'no_trailing_comma_in_singleline_array' => true,
         'no_trailing_comma_in_singleline_function_call' => true,

@@ -17,9 +17,6 @@ class ChicagoStyleVeggiePizza extends AbstractPizza
         $this->toppings[] = 'Eggplant';
     }
 
-    /**
-     * @return void
-     */
     public function cut(): void
     {
         echo 'Cutting the pizza into square slices';

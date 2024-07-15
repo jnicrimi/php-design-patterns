@@ -11,14 +11,8 @@ class HouseBlend extends AbstractBeverage
      */
     private const COST = 0.89;
 
-    /**
-     * @var string
-     */
     protected string $description = 'House Blend Coffee';
 
-    /**
-     * @return float
-     */
     public function cost(): float
     {
         return self::COST;

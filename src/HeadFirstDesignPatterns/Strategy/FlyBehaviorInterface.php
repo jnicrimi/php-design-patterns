@@ -6,8 +6,5 @@ namespace HeadFirstDesignPatterns\Strategy;
 
 interface FlyBehaviorInterface
 {
-    /**
-     * @return string
-     */
     public function fly(): string;
 }

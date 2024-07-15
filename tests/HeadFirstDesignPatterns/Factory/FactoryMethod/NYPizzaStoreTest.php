@@ -9,14 +9,8 @@ use PHPUnit\Framework\TestCase;
 
 class NYPizzaStoreTest extends TestCase
 {
-    /**
-     * @var NYPizzaStore
-     */
     private NYPizzaStore $store;
 
-    /**
-     * @return void
-     */
     public function setUp(): void
     {
         parent::setUp();
@@ -25,11 +19,6 @@ class NYPizzaStoreTest extends TestCase
 
     /**
      * @dataProvider provideCreatePizza
-     *
-     * @param string $type
-     * @param string $expected
-     *
-     * @return void
      */
     public function testCreatePizza(string $type, string $expected): void
     {
@@ -37,9 +26,6 @@ class NYPizzaStoreTest extends TestCase
         $this->assertEquals($expected, $pizza->getName());
     }
 
-    /**
-     * @return array
-     */
     public static function provideCreatePizza(): array
     {
         return [

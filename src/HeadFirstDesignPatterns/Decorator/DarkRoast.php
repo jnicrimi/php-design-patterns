@@ -11,14 +11,8 @@ class DarkRoast extends AbstractBeverage
      */
     private const COST = 0.99;
 
-    /**
-     * @var string
-     */
     protected string $description = 'Dark Roast Coffee';
 
-    /**
-     * @return float
-     */
     public function cost(): float
     {
         return self::COST;

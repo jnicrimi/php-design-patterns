@@ -6,37 +6,19 @@ namespace HeadFirstDesignPatterns\Factory\FactoryMethod;
 
 abstract class AbstractPizza
 {
-    /**
-     * @var string
-     */
     protected string $name;
 
-    /**
-     * @var string
-     */
     protected string $dough;
 
-    /**
-     * @var string
-     */
     protected string $sauce;
 
-    /**
-     * @var array
-     */
     protected array $toppings = [];
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return void
-     */
     public function prepare(): void
     {
         echo 'Prepare '.$this->name.PHP_EOL;
@@ -48,33 +30,21 @@ abstract class AbstractPizza
         }
     }
 
-    /**
-     * @return void
-     */
     public function bake(): void
     {
         echo 'Bake for 25 minutes at 350';
     }
 
-    /**
-     * @return void
-     */
     public function cut(): void
     {
         echo 'Cut the pizza into diagonal slices';
     }
 
-    /**
-     * @return void
-     */
     public function box(): void
     {
         echo 'Place pizza in official PizzaStore box';
     }
 
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         $display = '';

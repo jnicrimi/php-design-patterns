@@ -12,22 +12,13 @@ use PHPUnit\Framework\TestCase;
 
 class HouseBlendTest extends TestCase
 {
-    /**
-     * @var HouseBlend
-     */
     private HouseBlend $beverage;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         $this->beverage = new HouseBlend();
     }
 
-    /**
-     * @return void
-     */
     public function testGetDescription(): void
     {
         $beverage = $this->beverage;
@@ -37,9 +28,6 @@ class HouseBlendTest extends TestCase
         $this->assertSame('House Blend Coffee, Soy, Mocha, Whip', $beverage->getDescription());
     }
 
-    /**
-     * @return void
-     */
     public function testCost(): void
     {
         $beverage = $this->beverage;

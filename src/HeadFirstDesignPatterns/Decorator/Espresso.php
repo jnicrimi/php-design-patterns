@@ -11,14 +11,8 @@ class Espresso extends AbstractBeverage
      */
     private const COST = 1.99;
 
-    /**
-     * @var string
-     */
     protected string $description = 'Espresso';
 
-    /**
-     * @return float
-     */
     public function cost(): float
     {
         return self::COST;

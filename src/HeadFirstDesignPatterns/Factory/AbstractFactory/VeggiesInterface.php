@@ -6,8 +6,5 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 interface VeggiesInterface
 {
-    /**
-     * @return string
-     */
     public function __toString(): string;
 }

@@ -6,11 +6,6 @@ namespace HeadFirstDesignPatterns\Factory\SimpleFactory;
 
 class SimplePizzaFactory
 {
-    /**
-     * @param string $type
-     *
-     * @return AbstractPizza|null
-     */
     public function createPizza(string $type): ?AbstractPizza
     {
         $pizza = null;

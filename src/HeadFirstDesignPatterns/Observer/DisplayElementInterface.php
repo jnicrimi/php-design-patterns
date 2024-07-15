@@ -6,8 +6,5 @@ namespace HeadFirstDesignPatterns\Observer;
 
 interface DisplayElementInterface
 {
-    /**
-     * @return void
-     */
     public function display(): void;
 }

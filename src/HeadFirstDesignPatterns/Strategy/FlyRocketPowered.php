@@ -6,9 +6,6 @@ namespace HeadFirstDesignPatterns\Strategy;
 
 class FlyRocketPowered implements FlyBehaviorInterface
 {
-    /**
-     * @return string
-     */
     public function fly(): string
     {
         return 'I\'m flying with a rocket';

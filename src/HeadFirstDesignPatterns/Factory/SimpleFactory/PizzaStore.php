@@ -6,18 +6,10 @@ namespace HeadFirstDesignPatterns\Factory\SimpleFactory;
 
 class PizzaStore
 {
-    /**
-     * @param SimplePizzaFactory $factory
-     */
     public function __construct(private SimplePizzaFactory $factory)
     {
     }
 
-    /**
-     * @param string $type
-     *
-     * @return AbstractPizza|null
-     */
     public function orderPizza(string $type): ?AbstractPizza
     {
         $pizza = $this->factory->createPizza($type);

@@ -6,21 +6,12 @@ namespace HeadFirstDesignPatterns\Decorator;
 
 abstract class AbstractBeverage
 {
-    /**
-     * @var string
-     */
     protected string $description = 'Unknown Beverage';
 
-    /**
-     * @return string
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return float
-     */
     abstract public function cost(): float;
 }

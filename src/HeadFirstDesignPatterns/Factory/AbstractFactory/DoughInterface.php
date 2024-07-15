@@ -6,8 +6,5 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 interface DoughInterface
 {
-    /**
-     * @return string
-     */
     public function __toString(): string;
 }

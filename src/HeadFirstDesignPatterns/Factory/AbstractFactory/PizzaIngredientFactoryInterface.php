@@ -8,19 +8,10 @@ use ArrayObject;
 
 interface PizzaIngredientFactoryInterface
 {
-    /**
-     * @return DoughInterface
-     */
     public function createDough(): DoughInterface;
 
-    /**
-     * @return SauceInterface
-     */
     public function createSauce(): SauceInterface;
 
-    /**
-     * @return CheeseInterface
-     */
     public function createCheese(): CheeseInterface;
 
     /**
@@ -28,13 +19,7 @@ interface PizzaIngredientFactoryInterface
      */
     public function createVeggies(): ArrayObject;
 
-    /**
-     * @return PepperoniInterface
-     */
     public function createPepperoni(): PepperoniInterface;
 
-    /**
-     * @return ClamsInterface
-     */
     public function createClam(): ClamsInterface;
 }

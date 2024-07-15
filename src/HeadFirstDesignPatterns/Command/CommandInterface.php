@@ -6,8 +6,5 @@ namespace HeadFirstDesignPatterns\Command;
 
 interface CommandInterface
 {
-    /**
-     * @return void
-     */
     public function execute(): void;
 }

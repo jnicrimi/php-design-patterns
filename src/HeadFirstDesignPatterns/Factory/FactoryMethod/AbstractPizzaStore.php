@@ -6,11 +6,6 @@ namespace HeadFirstDesignPatterns\Factory\FactoryMethod;
 
 abstract class AbstractPizzaStore
 {
-    /**
-     * @param string $type
-     *
-     * @return AbstractPizza|null
-     */
     abstract public function createPizza(string $type): ?AbstractPizza;
 
     public function orderPizza(string $type): AbstractPizza

@@ -6,9 +6,6 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 class SlicedPepperoni implements PepperoniInterface
 {
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return 'Sliced Pepperoni';

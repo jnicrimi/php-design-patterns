@@ -6,31 +6,15 @@ namespace HeadFirstDesignPatterns\Observer;
 
 class CurrentConditionsDisplay implements DisplayElementInterface, ObserverInterface
 {
-    /**
-     * @var float
-     */
     private float $temperature;
 
-    /**
-     * @var float
-     */
     private float $humidity;
 
-    /**
-     * @param WeatherData $weatherData
-     */
     public function __construct(private WeatherData $weatherData)
     {
         $this->weatherData->registerObserver($this);
     }
 
-    /**
-     * @param float $temperature
-     * @param float $humidity
-     * @param float $pressure
-     *
-     * @return void
-     */
     public function update(float $temperature, float $humidity, float $pressure): void
     {
         $this->temperature = $temperature;
@@ -38,9 +22,6 @@ class CurrentConditionsDisplay implements DisplayElementInterface, ObserverInter
         $this->display();
     }
 
-    /**
-     * @return void
-     */
     public function display(): void
     {
         echo sprintf(

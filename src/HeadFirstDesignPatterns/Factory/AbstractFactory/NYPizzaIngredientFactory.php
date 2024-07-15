@@ -8,25 +8,16 @@ use ArrayObject;
 
 class NYPizzaIngredientFactory implements PizzaIngredientFactoryInterface
 {
-    /**
-     * @return DoughInterface
-     */
     public function createDough(): DoughInterface
     {
         return new ThinCrustDough();
     }
 
-    /**
-     * @return SauceInterface
-     */
     public function createSauce(): SauceInterface
     {
         return new MarinaraSauce();
     }
 
-    /**
-     * @return CheeseInterface
-     */
     public function createCheese(): CheeseInterface
     {
         return new ReggianoCheese();
@@ -46,17 +37,11 @@ class NYPizzaIngredientFactory implements PizzaIngredientFactoryInterface
         return $veggies;
     }
 
-    /**
-     * @return PepperoniInterface
-     */
     public function createPepperoni(): PepperoniInterface
     {
         return new SlicedPepperoni();
     }
 
-    /**
-     * @return ClamsInterface
-     */
     public function createClam(): ClamsInterface
     {
         return new FreshClams();

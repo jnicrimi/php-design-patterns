@@ -6,9 +6,6 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 class ReggianoCheese implements CheeseInterface
 {
-    /**
-     * @return string
-     */
     public function __toString(): string
     {
         return 'Reggiano Cheese';

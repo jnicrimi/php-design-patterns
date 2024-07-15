@@ -6,41 +6,19 @@ namespace HeadFirstDesignPatterns\Observer;
 
 class StatisticsDisplay implements DisplayElementInterface, ObserverInterface
 {
-    /**
-     * @var float
-     */
     private float $maxTemp = 0.0;
 
-    /**
-     * @var float
-     */
     private float $minTemp = 200;
 
-    /**
-     * @var float
-     */
     private float $tempSum = 0.0;
 
-    /**
-     * @var int
-     */
     private int $numReadings = 0;
 
-    /**
-     * @param WeatherData $weatherData
-     */
     public function __construct(private WeatherData $weatherData)
     {
         $this->weatherData->registerObserver($this);
     }
 
-    /**
-     * @param float $temperature
-     * @param float $humidity
-     * @param float $pressure
-     *
-     * @return void
-     */
     public function update(float $temperature, float $humidity, float $pressure): void
     {
         $this->tempSum += $temperature;
@@ -54,9 +32,6 @@ class StatisticsDisplay implements DisplayElementInterface, ObserverInterface
         $this->display();
     }
 
-    /**
-     * @return void
-     */
     public function display(): void
     {
         if ($this->numReadings === 0) {

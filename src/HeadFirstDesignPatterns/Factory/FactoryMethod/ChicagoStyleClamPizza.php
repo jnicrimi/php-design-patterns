@@ -15,9 +15,6 @@ class ChicagoStyleClamPizza extends AbstractPizza
         $this->toppings[] = 'Frozen Clams from Chesapeake Bay';
     }
 
-    /**
-     * @return void
-     */
     public function cut(): void
     {
         echo 'Cutting the pizza into square slices';
