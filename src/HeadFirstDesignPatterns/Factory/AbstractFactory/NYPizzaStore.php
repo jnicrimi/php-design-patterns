@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
-class NYPizzaStore extends AbstractPizzaStore
+class NYPizzaStore extends PizzaStore
 {
-    protected function createPizza(string $type): ?AbstractPizza
+    protected function createPizza(string $type): ?Pizza
     {
         $pizza = null;
         $ingredientFactory = new NYPizzaIngredientFactory();

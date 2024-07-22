@@ -4,7 +4,7 @@ declare (strict_types=1);
 
 namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
-class VeggiePizza extends AbstractPizza
+class VeggiePizza extends Pizza
 {
     public function __construct(protected PizzaIngredientFactoryInterface $ingredientFactory)
     {
