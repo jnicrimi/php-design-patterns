@@ -6,7 +6,7 @@ namespace HeadFirstDesignPatterns\Factory\SimpleFactory;
 
 class SimplePizzaFactory
 {
-    public function createPizza(string $type): ?AbstractPizza
+    public function createPizza(string $type): ?Pizza
     {
         $pizza = null;
         switch ($type) {
