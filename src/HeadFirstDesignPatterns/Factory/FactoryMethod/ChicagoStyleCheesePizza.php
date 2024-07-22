@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Factory\FactoryMethod;
 
-class ChicagoStyleCheesePizza extends AbstractPizza
+class ChicagoStyleCheesePizza extends Pizza
 {
     public function __construct()
     {

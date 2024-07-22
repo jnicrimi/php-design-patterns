@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Factory\FactoryMethod;
 
-class NYPizzaStore extends AbstractPizzaStore
+class NYPizzaStore extends PizzaStore
 {
-    public function createPizza(string $type): ?AbstractPizza
+    public function createPizza(string $type): ?Pizza
     {
         switch ($type) {
             case 'cheese':
