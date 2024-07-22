@@ -6,7 +6,7 @@ namespace HeadFirstDesignPatterns\Factory\SimpleFactory;
 
 use Stringable;
 
-abstract class AbstractPizza implements Stringable
+abstract class Pizza implements Stringable
 {
     protected string $name;
 

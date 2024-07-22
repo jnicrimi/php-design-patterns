@@ -10,7 +10,7 @@ class PizzaStore
     {
     }
 
-    public function orderPizza(string $type): ?AbstractPizza
+    public function orderPizza(string $type): ?Pizza
     {
         $pizza = $this->factory->createPizza($type);
         if ($pizza === null) {
