@@ -6,7 +6,7 @@ namespace HeadFirstDesignPatterns\Factory\AbstractFactory;
 
 use ArrayObject;
 
-abstract class AbstractPizza
+abstract class Pizza
 {
     protected string $name;
 
