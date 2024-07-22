@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Decorator;
 
-abstract class AbstractBeverage
+abstract class Beverage
 {
     protected string $description = 'Unknown Beverage';
 

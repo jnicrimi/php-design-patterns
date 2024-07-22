@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Decorator;
 
-class Mocha extends AbstractCondimentDecorator
+class Mocha extends CondimentDecorator
 {
     /**
      * @var float

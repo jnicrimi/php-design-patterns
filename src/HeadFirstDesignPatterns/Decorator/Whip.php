@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Decorator;
 
-class Whip extends AbstractCondimentDecorator
+class Whip extends CondimentDecorator
 {
     /**
      * @var float
