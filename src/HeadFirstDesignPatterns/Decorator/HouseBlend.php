@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Decorator;
 
-class HouseBlend extends AbstractBeverage
+class HouseBlend extends Beverage
 {
     /**
      * @var float

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Decorator;
 
-class Soy extends AbstractCondimentDecorator
+class Soy extends CondimentDecorator
 {
     /**
      * @var float

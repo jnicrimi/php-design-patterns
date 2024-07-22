@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Decorator;
 
-class DarkRoast extends AbstractBeverage
+class DarkRoast extends Beverage
 {
     /**
      * @var float
