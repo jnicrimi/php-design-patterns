@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Strategy;
 
-abstract class AbstractDuck
+abstract class Duck
 {
     protected FlyBehaviorInterface $flyBehavior;
 

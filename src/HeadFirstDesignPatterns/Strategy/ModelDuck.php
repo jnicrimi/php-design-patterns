@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Strategy;
 
-class ModelDuck extends AbstractDuck
+class ModelDuck extends Duck
 {
     public function __construct()
     {
