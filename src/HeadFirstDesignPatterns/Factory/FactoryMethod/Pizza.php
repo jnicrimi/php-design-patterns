@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HeadFirstDesignPatterns\Factory\FactoryMethod;
 
-abstract class AbstractPizza
+abstract class Pizza
 {
     protected string $name;
 
